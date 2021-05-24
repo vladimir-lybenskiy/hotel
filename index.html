@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 Hotel Room Booking (JavaScript, PHP, MySQL)</title>
+
+
+    <!-- DayPilot library -->
+
+<link type="text/css" rel="stylesheet" href="index.css">
+
+    <link type="text/css" rel="stylesheet" href="icons/style.css" />
+
+
+
+</head>
+<body>
+<div class="header">
+   <div class="bg-help">
+      <div class="inBox">
+        <h1 id="logo">HTML5 Бронювання кімнат в готелі (JavaScript/PHP)</h1>
+        <p id="claim">AJAX'овий Календар-застосунок з JavaScript/HTML5/jQuery</p>
+        <hr class="hidden" />
+      </div>
+    </div>
+   </div>
+
+<div class="main">
+    <div style="width:220px; float:left;">
+        <div id="nav"></div>
+    </div>
+
+    <div>
+
+        <div class="toolbar">
+
+            Room filter:
+            <select id="filter">
+                <option value="0">Всі</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+            </select>
+
+            &nbsp;&nbsp;
+
+            <button id="addroom">Додати кімнату</button>
+
+            <div class="toolbar-separator"></div>
+
+            Time range:
+            <select id="timerange">
+                <option value="week">Week</option>
+                <option value="month" selected>Month</option>
+            </select>
+            <div class="toolbar-separator"></div>
+            <label for="autocellwidth"><input type="checkbox" id="autocellwidth">Auto Cell Width</label>
+
+        </div>
+
+        <div id="dp"></div>
+
+    </div>
+
+</div>
+ <footer class="footer">
+  <address>(с)Автор лабораторної роботи: студент спеціальності 121 , Савчук Володимир Юрійович</address>
+ </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/daypilot/daypilot-all.min.js"></script>
+    <script src='js/index.js' type="text/javascript"></script>
+
+
+
+</body>
+</html>
